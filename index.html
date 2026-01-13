@@ -1,3 +1,4 @@
+  <!-- THIS IS A OUTDATED WEBSITE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AUTTP Official</title>
   <noscript>
-  <meta http-equiv="refresh" content="0;url=https://guest666master.github.io/stopping-the-UTTP/noscript">
-</noscript>
+    <meta http-equiv="refresh" content="0;url=https://guest666master.github.io/stopping-the-UTTP/noscript">
+  </noscript>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rubik:wght@400;700&family=Montserrat:wght@400;700&family=Unbounded:wght@500;700&display=swap');
@@ -96,37 +97,91 @@
     }
 
     .intro-text {
-  font-family: 'Unbounded', cursive;
-  font-size: 2.5rem;
-  color: #00ff88;
-  text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
-  animation: introSpin 1.5s ease-out, bounce 0.6s ease-out 1.5s forwards;
-  transform: rotateX(0deg);
-  opacity: 0;
-  margin-top: 2.5rem;
-}
+      font-family: 'Unbounded', cursive;
+      font-size: 2.5rem;
+      color: #00ff88;
+      text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+      animation: introSpin 1.5s ease-out, bounce 0.6s ease-out 1.5s forwards;
+      transform: rotateX(0deg);
+      opacity: 0;
+      margin-top: 2.5rem;
+    }
 
-@keyframes introSpin {
-  0% {
-    transform: rotateX(0deg) translateY(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: rotateX(90deg) translateY(0);
-    opacity: 1;
-  }
-}
+    @keyframes introSpin {
+      0% {
+        transform: rotateX(0deg) translateY(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: rotateX(90deg) translateY(0);
+        opacity: 1;
+      }
+    }
 
-@keyframes bounce {
-  0%   { transform: rotateX(90deg) translateY(0); }
-  30%  { transform: rotateX(90deg) translateY(-20px); }
-  60%  { transform: rotateX(90deg) translateY(10px); }
-  100% { transform: rotateX(90deg) translateY(0); }
-}
+    @keyframes bounce {
+      0%   { transform: rotateX(90deg) translateY(0); }
+      30%  { transform: rotateX(90deg) translateY(-20px); }
+      60%  { transform: rotateX(90deg) translateY(10px); }
+      100% { transform: rotateX(90deg) translateY(0); }
+    }
 
   </style>
 </head>
 <body>
+  <!-- OUTDATED POPUP WILL SHOW ON LOAD -->
+  <script>
+    window.addEventListener('load', () => {
+      const overlay = document.createElement('div');
+      overlay.style.position = 'fixed';
+      overlay.style.top = '0';
+      overlay.style.left = '0';
+      overlay.style.width = '100%';
+      overlay.style.height = '100%';
+      overlay.style.background = 'rgba(0,0,0,0.85)';
+      overlay.style.display = 'flex';
+      overlay.style.alignItems = 'center';
+      overlay.style.justifyContent = 'center';
+      overlay.style.zIndex = '10000';
+      overlay.style.animation = 'fadeIn 0.5s ease forwards';
+      
+      const popup = document.createElement('div');
+      popup.style.background = '#111';
+      popup.style.border = '3px solid #ff4d4d';
+      popup.style.borderRadius = '12px';
+      popup.style.padding = '2rem';
+      popup.style.maxWidth = '500px';
+      popup.style.textAlign = 'center';
+      popup.style.boxShadow = '0 0 20px #ff4d4d';
+      popup.style.animation = 'popupScale 0.5s ease forwards';
+      
+      popup.innerHTML = `
+        <h2 style="color:#ff4d4d; font-family:'Unbounded', cursive;">⚠️ Outdated / Archived ⚠️</h2>
+        <p style="color:#ccc; font-family:'Montserrat', sans-serif;">
+          This site is no longer maintained. Some information may be outdated or inaccurate.<br>
+          Use at your own risk.
+        </p>
+        <button id="closePopup" style="
+          margin-top: 1.5rem;
+          background: #ff4d4d;
+          color: #000;
+          border: none;
+          padding: 0.7rem 1.5rem;
+          border-radius: 8px;
+          font-family: 'Unbounded', cursive;
+          font-weight: bold;
+          cursor: pointer;
+        ">Close</button>
+      `;
+      
+      overlay.appendChild(popup);
+      document.body.appendChild(overlay);
+      
+      document.getElementById('closePopup').addEventListener('click', () => {
+        overlay.remove();
+      });
+    });
+  </script>
+
   <header>
     <h1 class="glow">AUTTP HQ</h1>
     <p><strong>defending the internet from cringe since day one 🖤💚</strong></p>
@@ -149,60 +204,56 @@
       wanna help expose 'em? make edits, make memes, make noise. every click helps spread awareness and send the UTTP back to their troll caves.
     </p>
 
-        <p>
+    <p>
       wanna protect yourself? follow the LRM protocol -- Look, Report, Move On. if they're stalking you, report them to the police.
-          <br>
-          <br>
-        they're dangerous. really dangerous. they're predators. they're stronger than ever. together, let's make them collapse. FOREVER.
-          <br>
-          <br>
-          discord, youtube, you name it. report them to your local police, and always follow the LRM protocol anytime you see a UTTP member.
+      <br><br>
+      they're dangerous. really dangerous. they're predators. they're stronger than ever. together, let's make them collapse. FOREVER.
+      <br><br>
+      discord, youtube, you name it. report them to your local police, and always follow the LRM protocol anytime you see a UTTP member.
     </p>
 
+    <button class="btn" onclick="showPopup()">Join the Movement</button>
 
-<button class="btn" onclick="showPopup()">Join the Movement</button>
-
-
-<div class="badge-box">
-  <h2 class="glow">AUTTP Member Badge 💚</h2>
-  <div style="background: linear-gradient(to right, #00bfff, #00ff88); color: #000; font-weight: bold; padding: 1rem; border-radius: 8px; font-size: 1.5rem;">
-    AUTTP Squad
-  </div>
-  <p>copy this to your website to show you're part of the crew:</p>
-  <div class="auttp-code">
-    &lt;a href="https://guest666master.github.io/stopping-the-UTTP/" target="_blank"&gt;<br />
-    &nbsp;&nbsp;&lt;div style="background: linear-gradient(to right, #00bfff, #00ff88); color: #000; font-weight: bold; padding: 1rem; border-radius: 8px; font-size: 1.2rem;"&gt;AUTTP Squad&lt;/div&gt;<br />
-    &lt;/a&gt;
-  </div>
-</div>
-
+    <div class="badge-box">
+      <h2 class="glow">AUTTP Member Badge 💚</h2>
+      <div style="background: linear-gradient(to right, #00bfff, #00ff88); color: #000; font-weight: bold; padding: 1rem; border-radius: 8px; font-size: 1.5rem;">
+        AUTTP Squad
+      </div>
+      <p>copy this to your website to show you're part of the crew:</p>
+      <div class="auttp-code">
+        &lt;a href="https://guest666master.github.io/stopping-the-UTTP/" target="_blank"&gt;<br />
+        &nbsp;&nbsp;&lt;div style="background: linear-gradient(to right, #00bfff, #00ff88); color: #000; font-weight: bold; padding: 1rem; border-radius: 8px; font-size: 1.2rem;"&gt;AUTTP Squad&lt;/div&gt;<br />
+        &lt;/a&gt;
+      </div>
+    </div>
+  </main>
 
   <footer>
     the AUTTP will forever be on. <a href="https://www.youtube.com/@JaidenSupport">former leader.</a> together, we can stop them once and for all.
   </footer>
-    <script>
-  function showPopup() {
-    const popup = document.createElement('div');
-    popup.style.position = 'fixed';
-    popup.style.top = '50%';
-    popup.style.left = '50%';
-    popup.style.transform = 'translate(-50%, -50%)';
-    popup.style.background = '#111';
-    popup.style.border = '2px solid #00ff88';
-    popup.style.borderRadius = '12px';
-    popup.style.padding = '2rem';
-    popup.style.zIndex = '1000';
-    popup.style.boxShadow = '0 0 20px #00ff88';
-    popup.style.maxWidth = '90%';
-    popup.innerHTML = `
-      <h2 style="font-family: 'Unbounded', cursive; color: #00ff88;">Support The AUTTP Former Leader 💚</h2>
-      <p style="color: #ccc; font-family: 'Montserrat';">AntiTroll has stepped down, but I'll keep this site open for any AUTTP updates. Support the mission.</p>
-      <a href="https://www.youtube.com/@JaidenSupport" target="_blank" style="color: #00ff88; text-decoration: underline; font-weight: bold;">@JaidenSupport</a><br><br>
-      <button onclick="this.parentElement.remove()" style="margin-top: 1.5rem; background: #00ff88; color: #000; border: none; padding: 0.6rem 1.2rem; border-radius: 8px; cursor: pointer; font-family: 'Unbounded';">Close</button>
-    `;
-    document.body.appendChild(popup);
-  }
-</script>
 
+  <script>
+    function showPopup() {
+      const popup = document.createElement('div');
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.background = '#111';
+      popup.style.border = '2px solid #00ff88';
+      popup.style.borderRadius = '12px';
+      popup.style.padding = '2rem';
+      popup.style.zIndex = '1000';
+      popup.style.boxShadow = '0 0 20px #00ff88';
+      popup.style.maxWidth = '90%';
+      popup.innerHTML = `
+        <h2 style="font-family: 'Unbounded', cursive; color: #00ff88;">Support The AUTTP Former Leader 💚</h2>
+        <p style="color: #ccc; font-family: 'Montserrat';">AntiTroll has stepped down, but I'll keep this site open for any AUTTP updates. Support the mission.</p>
+        <a href="https://www.youtube.com/@JaidenSupport" target="_blank" style="color: #00ff88; text-decoration: underline; font-weight: bold;">@JaidenSupport</a><br><br>
+        <button onclick="this.parentElement.remove()" style="margin-top: 1.5rem; background: #00ff88; color: #000; border: none; padding: 0.6rem 1.2rem; border-radius: 8px; cursor: pointer; font-family: 'Unbounded';">Close</button>
+      `;
+      document.body.appendChild(popup);
+    }
+  </script>
 </body>
 </html>
