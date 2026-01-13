@@ -1,6 +1,8 @@
 <h1>AUTTP.</h1>
 <img alt="Static Badge" src="https://img.shields.io/badge/invalid%20made%20ts%20%3D%5D-why%20not-maker">
 
+> [!WARNING]
+> Reminder that this is OUTDATED. THIS IS FROM 2025.
 
 <p>Why does the UTTP exist? I don't know, but they're actually predators. More than to see the eye.</p>
 <p>That's where the AUTTP exists. To stop the UTTP.</p>
